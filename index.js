@@ -21,6 +21,7 @@ function minAbsDiff(arr) {
 
 function closestNumbers(numbers) {
     let copy = [...numbers];
+    console.log(copy);
     let minDiff = Infinity;
     copy.sort((a, b) => a > b ? 1 : b > a ? -1 : 0);
     console.log(copy);
@@ -35,6 +36,6 @@ function closestNumbers(numbers) {
     })
 }
 
-let arr = [-9, -5, 9, 10, 12];
+let arr = [-5, -9, 9, 10, 12];
 
 closestNumbers(arr);
