@@ -20,5 +20,25 @@ console.log(fullName.length);
 //converting to the upper case
 console.log(fullName.toUpperCase());
 
-let result = fullName.lowercase();
+//converting to the lower case
+let result = fullName.toLowerCase(); 
+console.log(result, fullName);
+
+//getting the index of character in a string
+let index = email.indexOf('@');
+console.log(index);
+
+console.log(email.lastIndexOf('i'));
+
+//###########################################//
+result = email.slice(4,10);
 console.log(result);
+////o@exam
+
+//###########################################//
+result = email.substr(4,10);
+console.log(result);
+////o@example.
+
+result = email.replace('m','n');
+console.log(result);////hello@exanple.com
