@@ -3,7 +3,9 @@ let user = {
     age: 32,
     email: 'geraltofrivia@witcher.com',
     location: 'rivia',
-    blogs: ["Kill the monster 1", 'Kill the monster 2'],
+    blogs: [
+        {details:"Kill the monster 1", difficulty:35},{details:"Kill the monster 2", difficulty:50}
+    ],
     login: function(){
        console.log("user is logged in"); 
     },
@@ -15,7 +17,7 @@ let user = {
         console.log(this);//this will return the current object if written in regular function
         console.log(`${this.name} have killed the following monsters`);
         this.blogs.forEach(element => {
-            console.log(element);
+            console.log(element.details, element.difficulty);
         });
     }
     //###########################################//
